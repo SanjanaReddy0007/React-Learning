@@ -1,0 +1,79 @@
+# Browser History App
+
+## Project Description
+
+The Browser History App is a React application that displays a list of browser history items. Users can search history entries using a search bar and delete individual history items. The application updates dynamically based on user interactions.
+
+## Features
+
+- Display browser history items.
+- Search history items irrespective of letter case.
+- Delete individual history entries.
+- Show Empty History View when no matching records are found.
+- Show Empty History View when all history items are deleted.
+
+## React Concepts Used
+
+- Class Components
+- State Management
+- Event Handling
+- Conditional Rendering
+- List Rendering using map()
+- Filtering Arrays
+- Props
+
+## Folder Structure
+
+src
+│
+├── components
+│   ├── BrowserHistory
+│   │   ├── index.js
+│   │   └── index.css
+│   │
+│   └── HistoryItem
+│       ├── index.js
+│       └── index.css
+│
+├── App.js
+├── App.css
+└── index.js
+
+## Component Structure
+
+### BrowserHistory Component
+
+Responsibilities:
+- Stores history list in state.
+- Handles search functionality.
+- Filters history items.
+- Deletes history items.
+- Displays Empty History View when required.
+
+### HistoryItem Component
+
+Responsibilities:
+- Displays a single history item.
+- Displays logo, title, domain URL, and time accessed.
+- Provides delete button functionality.
+
+## State Variables
+
+- searchInput
+- historyList
+
+## Methods Implemented
+
+### onChangeSearchInput()
+Updates search input value.
+
+### deleteHistoryItem()
+Removes selected history item from history list.
+
+## Learning Outcomes
+
+- Managing state in React.
+- Passing data through props.
+- Updating UI dynamically.
+- Handling user events.
+- Implementing search and delete functionality.
